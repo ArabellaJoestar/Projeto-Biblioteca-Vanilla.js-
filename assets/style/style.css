@@ -1,0 +1,299 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+    height: 90px;
+    background-color: #242331;
+}
+
+.navBar {
+
+    height: 100%;
+}
+
+.navBar div {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-around; 
+    align-items: center; 
+    
+    height: 100%;
+}
+
+.navBar #pilhaButtons .buttonPag {
+    height: 100%;
+    width: 300px;
+    text-align: center;
+    border: none;
+    border-style: none;
+    outline: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    transition: 1s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navBar #pilhaButtons .buttonPag:hover{
+height: 120%;
+background-color: #96713e;
+color: #e0bea2;
+}
+.navBar #pilhaButtons button{
+    background-color: #B88B4A;
+    color: #533E2D;
+    font-size: 18px;
+}
+
+.navBar #pilhaButtons div{
+    gap: 5px;
+}
+.navBar #pilhaButtons div button{
+    width: 90px;
+    height: 50px;
+    border: none;
+    border-style: none;
+    outline: none;
+    border-radius: 9px;
+    
+}
+.navBar #pilhaButtons div input{
+    height: 50px;
+    width: 200px;
+    border-radius: 9px;
+    border-style: none;
+    outline: none;
+    background-color: #533E2D;
+    padding-left: 2px;
+}
+.navBar #pilhaButtons div input::placeholder{
+    color: white;
+    text-align: center;}
+
+
+main{
+    height: 1011px;
+    width: 100%;
+    background-color: #242331;
+}
+
+main .renderizaDados{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+main .renderizaDados .ListaLivros{
+    width: 800px;
+    height: 800px;
+    border-radius: 15px;
+    background-color: #533E2D;
+    overflow: hidden;
+    text-align: center;
+}
+
+.welcomeDiv{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.welcomeDiv h2{
+    font-size: 60px;
+}
+
+.addLivros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.addLivros h2 {
+    font-size: 55px;
+    background-color: #A27035;
+    color: #DDCA7D;
+}
+
+.dadosLivro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    align-items: center;
+    gap: 10px;
+    margin-left: 25px;
+}
+.inputGroup label{
+    font-weight: bold;
+    color: #DDCA7D;
+}
+
+.dadosLivro input {
+    height: 50px;
+    width: 80%;
+    border-style: none;
+    outline: none;
+    border-radius: 7px;
+    background-color: #B88B4A;
+    color: #DDCA7D;
+    padding-left: 5px;
+    padding-right: 5px;
+    color: white;
+}
+
+.dadosLivro input::placeholder {
+    text-align: center;
+    color: #DDCA7D;
+}
+
+.dadosLivro .inputGroup select {
+    height: 50px;
+    width: 522px;
+    border-radius: 7px;
+    border-style: none;
+    outline: none;
+    background-color: #B88B4A;
+    color: #DDCA7D;
+    
+}
+
+.dadosLivro button {
+    height: 200px;
+    width: 200px;
+    font-size: 25px;
+    border-radius: 20%;
+    border-style: none;
+    outline: none;
+    background-color: #A27035;
+    color: #DDCA7D;
+    transition: 0.5s;
+    align-self: center;
+}
+
+.dadosLivro button:hover {
+    background-color: #7a5427;
+    border-radius: 35%;
+    font-size:20px;
+    width: 175px;
+    height: 175px;
+}
+.divGerenciamentoLivros{
+    height: 100%;
+}
+.divGerenciamentoLivros h2{
+    font-size: 55px;
+    background-color: #A27035;
+    color: #DDCA7D;
+}
+
+.divGerenciamentoLivros .livrosList .tableLivros{
+    width: 100%;
+    border-collapse: collapse; 
+    margin: 0 10px;
+    font-family: Arial, sans-serif;
+    margin-top: 15px;
+    
+}
+.tableLivros thead tr{
+    display: flex;
+    justify-content: space-around
+}
+.tableLivros thead tr th{
+    width: 100%;
+}
+.tableLivros tbody tr{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.tableLivros tbody tr td{
+    width: 100%;
+}
+.tableLivros th {
+    color: white;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+}
+
+
+.tableLivros td {
+    padding: 10px;
+    width: 3px;
+}
+
+
+.livrosList {
+    height: 85%;  
+    display: block;
+    overflow-y: auto;
+    max-height: 700px;
+}
+
+.tableLivros {
+    width: 500px;           
+    max-width: 800px;     
+    height: auto;           
+    border-collapse: collapse; 
+    box-sizing: border-box;  
+}
+
+
+.livrosList {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.tableLivros tr{
+    height: 50px;
+}
+
+.divBusca{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.divBusca input{
+    width: 300px;
+    outline: none;
+    border-style: none;
+    border-radius: 7px;
+    padding: 2px;
+    background-color: #B88B4A;
+}
+.divBusca input::placeholder{
+    color: white;
+}
+
+.divBusca button{
+    padding: 2px;
+    outline: none;
+    border-style: none;
+    border-radius: 7px;
+    background-color: #B88B4A;
+    color: #533E2D;
+    transition: 1s;
+    width: 50px;
+}
+
+.divBusca button:hover{
+    background-color: #96713e;
+    color: #e0bea2;
+    font-size: 15px;
+}
