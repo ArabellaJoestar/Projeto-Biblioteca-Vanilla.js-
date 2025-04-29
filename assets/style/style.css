@@ -213,6 +213,9 @@ main .renderizaDados .ListaLivros{
 .tableLivros thead tr th{
     width: 100%;
 }
+tbody tr{
+    margin-top: 5px;
+}
 .tableLivros tbody tr{
     display: flex;
     justify-content: space-around;
@@ -296,4 +299,23 @@ main .renderizaDados .ListaLivros{
     background-color: #96713e;
     color: #e0bea2;
     font-size: 15px;
+}
+
+.buttonDelete{
+    width: 100px;
+    height: 25px;
+    font-weight: bold;
+    background-color:#B88B4A;
+    align-self: center;
+    outline: none;
+    border-style: none;
+    border-radius: 100%;
+    transition: 0.5s;
+    display: flex;
+align-items: center;
+justify-content: center;}
+
+.buttonDelete:hover{
+    background-color: #96713e;
+    padding: 5px;
 }

@@ -11,3 +11,15 @@ export function buscaLivroTitle(input) {
         return false
     }
 }
+
+
+export function buscaLivroTitleReturnIndex(valueTitle){
+
+    if(listaDeLivros.some(livro => livro.titulo.toLowerCase().includes(valueTitle))){
+        const indexLivro = listaDeLivros.indexOf(valueTitle)
+        return indexLivro
+    }
+    else {
+        return false
+    }
+}
